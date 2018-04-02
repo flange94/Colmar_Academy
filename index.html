@@ -2,8 +2,8 @@
 <html>
 <head>
   <title>Colmar Academy</title>
-  <link rel="stylesheet" href="resources/css/reset.css" type="text/css" />
-  <link rel="stylesheet" href="resources/css/style.css" type="text/css" />
+  <link rel="stylesheet" href="./resources/css/reset.css" type="text/css" />
+  <link rel="stylesheet" href="./resources/css/style.css" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
 </head>
 <body>
@@ -11,22 +11,46 @@
   <header>
     <!-- The Navigation Bar -->
     <div class="container">
-      <div id="logo">
-        <img src="resources/images/ic-logo.svg" alt="The Logo of the Colmar Academy - a Lion" />
+      <div class="logo">
+        <img src="./resources/images/ic-logo.svg" alt="The Logo of the Colmar Academy - a Lion" />
         <span class="logo_dark_grey">COLMAR</span><span class="logo_light_grey">ACADEMY</span>
       </div>
-      <nav>
+
+      <!-- Desktop Menu -->
+      <nav class="desktop">
         <div class="nav_item">
           <span>On Campus</span>
         </div>
+
         <div class="nav_item">
           <span>Online</span>
         </div>
+
         <div class="nav_item">
           <span>For Companies</span>
         </div>
+
         <div class="nav_item">
           <span>Sign In</span>
+        </div>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <nav class="mobile">
+        <div class="nav_item">
+          <img src="./resources/images/ic-logo.svg" alt="The Logo of the Colmar Academy - a Lion" />
+        </div>
+
+        <div class="nav_item">
+          <img src="./resources/images/ic-logo.svg" alt="The Logo of the Colmar Academy - a Lion" />
+        </div>
+
+        <div class="nav_item">
+          <img src="./resources/images/ic-logo.svg" alt="The Logo of the Colmar Academy - a Lion" />
+        </div>
+
+        <div class="nav_item">
+          <img src="./resources/images/ic-logo.svg" alt="The Logo of the Colmar Academy - a Lion" />
         </div>
       </nav>
     </div>
@@ -38,11 +62,13 @@
     <div id="banner">
       <div class="container">
         <div class="left_box">
-          <img src="resources/images/banner.jpg" alt="Banner of three Students learning" />
+          <img src="./resources/images/banner.jpg" alt="Banner of three Students learning" />
         </div>
+
         <div class="right_box">
           <h1>Learn something new everyday</h1>
           <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+
           <div class="start_button">
             <span>Start here</span>
           </div>
@@ -53,12 +79,63 @@
     <!-- News & Information Section -->
     <div id="information">
       <div class="container">
-        <div class="information_wrapper">
-          <img src="resources/images/information-main.jpg" alt="young man reading a brochure sitting on a bech in the park" />
-          <h2>It doesn't gurt to keep practicing</h2>
+        <div class="left_box">
+          <img src="./resources/images/information-main.jpg" alt="young man reading a brochure sitting on a bech in the park" />
+          <h2>It doesn't hurt to keep practicing</h2>
+
           <div class="quote">
-            <p></p>
-            <span></span>
+            <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequate neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+            <span>Emmanual, Sr Stratagist at Hiring.com</span>
+          </div>
+        </div>
+
+        <div class="right_box">
+          <div class="first_news box">
+            <div class="desktop">
+              <img src="./resources/images/information-orientation.jpg" alt="students running on campus">
+            </div>
+
+            <div class="mobile">
+              <img src="./resources/images/information-orientation-mobile.jpg" alt="students running on campus">
+            </div>
+
+            <div class="news_text">
+              <h4>Orintation Date</h4>
+              <p>Tues 10/11 &amp; Wed 10/12: 8am-3pm</p>
+              <a href="#">Read more</a>
+            </div>
+          </div>
+
+          <div class="second_news box">
+            <div class="desktop">
+              <img src="./resources/images/information-campus.jpg" alt="Students learning">
+            </div>
+
+            <div class="mobile">
+              <img src="./resources/images/information-campus-mobile.jpg" alt="Students learning">
+            </div>
+
+            <div class="news_text">
+              <h4>Our Campus</h4>
+              <p>Find which campus is close by you</p>
+              <a href="link">Read more</a>
+            </div>
+          </div>
+
+          <div class="third_news box">
+            <div class="desktop">
+              <img src="./resources/images/information-guest-lecture.jpg" alt="picture of lecturer">
+            </div>
+
+            <div class="mobile">
+              <img src="./resources/images/information-guest-lecture-mobile.jpg" alt="picture of lecturer">
+            </div>
+
+            <div class="news_text">
+              <h4>Our gest lecture</h4>
+              <p>Join a keynote with Oliver Sack about music about medical treatment</p>
+              <a href="link">Read more</a>
+            </div>
           </div>
         </div>
       </div>

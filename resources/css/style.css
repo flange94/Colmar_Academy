@@ -24,6 +24,9 @@ h2 {
   margin: 0 auto;
 }
 
+.mobile {
+  display: none;
+}
 
 /* ***************** */
 /* HEADER DEFINTIONS */
@@ -44,39 +47,39 @@ header .container {
   height: 64px;
 }
 
-  header nav {
+  header nav.desktop {
     display: flex;
     font-size: 1.25rem;
   }
 
-    header nav .nav_item {
+    header nav.desktop .nav_item {
       margin-right: 16px;
     }
 
-      header nav .nav_item:hover {
+      header nav.desktop .nav_item:hover {
         text-decoration: underline;
         cursor: pointer;
       }
 
-      header nav .nav_item:last-child {
+      header nav.desktop .nav_item:last-child {
         margin-right: 24px;
       }
 
-#logo {
+.container .logo {
   font-size: 1.5rem;
   margin-left: 24px;
   display: flex;
   align-items: center;
 }
-  #logo img {
+.container   .logo img {
     height: 3rem;
   }
 
-  #logo .logo_light_grey {
+  .container .logo .logo_light_grey {
     color: #B1B1AF;
   }
 
-  #logo .logo_dark_grey {
+  .container .logo .logo_dark_grey {
     font-weight: bold;
   }
 
@@ -96,7 +99,7 @@ header .container {
   flex-direction: column;
 }
 
-/* Banner Box */
+/* Banner Section */
 
 #banner {
   top: 64px;
@@ -104,14 +107,14 @@ header .container {
   background: #DCDCDC;
 }
 
-#banner .container {
-  display: flex;
-  align-items: center;
-}
+  #banner .container {
+    display: flex;
+    align-items: center;
+  }
 
-#banner img {
-  width: 100%;
-}
+    #banner img {
+      width: 100%;
+    }
 
 .start_button {
   background-color: #3f3f3f;
@@ -129,4 +132,44 @@ header .container {
     cursor: pointer;
     border-radius: 4px;
     color: #DCDCDC;
+  }
+
+/* Information Section */
+
+#information {
+  position: relative;
+  top: 64px;
+}
+
+  #information .container {
+    display: flex;
+  }
+
+  #information .left_box img {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  #information .right_box {
+    border-left: 1px solid #DCDCDC;
+    padding-left: 1rem;
+  }
+
+  #information .box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #information .desktop {
+    width: 35%;
+  }
+
+  #information .desktop img {
+    width: 100%;
+  }
+
+  #information .news_text {
+    width: 65%;
   }
