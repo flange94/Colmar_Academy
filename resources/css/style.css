@@ -1,0 +1,63 @@
+/* ****************** */
+/* GENERAL DEFINTIONS */
+/* ****************** */
+
+html {
+  font-size: 16px;
+  font-family: 'Ubuntu', sans-serif;
+  color: #3f3f3f;
+}
+
+/* ***************** */
+/* HEADER DEFINTIONS */
+/* ***************** */
+
+header {
+  display: fixed;
+  height: 65px;
+  width: 100%;
+  border-bottom: 1px solid #B1B1AF;
+  z-index: 5;
+}
+
+#navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+  #navigation nav {
+    display: flex;
+    font-size: 1.5rem;
+  }
+
+    #navigation nav .nav_item {
+      margin-right: 16px;
+    }
+
+    #navigation nav .nav_item:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    #navigation nav .nav_item:last-child {
+      margin-right: 24px;
+    }
+
+#logo {
+  font-size: 2rem;
+  margin-left: 24px;
+  display: flex;
+  align-items: center;
+}
+  #logo img {
+    height: 4rem;
+  }
+
+  #logo .logo_light_grey {
+    color: #B1B1AF;
+  }
+
+  #logo .logo_dark_grey {
+    font-weight: bold;
+  }
